@@ -13,6 +13,13 @@
 @end
 
 @implementation ViewController
+-(IBAction) button{
+    number = number+1;
+    label.text = [NSString stringWithFormat:@"%d",number];
+    if(number>=5){
+        label.textColor =[UIColor blueColor];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
